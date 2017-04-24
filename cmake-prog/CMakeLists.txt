@@ -4,6 +4,8 @@ cmake_policy(SET CMP0022 NEW)
 
 set(CMAKE_CXX_STANDARD 11)
 
+# stand-alone project if library targets not defined
+# -> find library package
 if (NOT TARGET cmake_lib)
     find_package(cmakeLib)
 endif()
