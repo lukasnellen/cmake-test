@@ -5,4 +5,5 @@ add_subdirectory(lib2)
 add_subdirectory(lib3)
 
 install(TARGETS cmake_lib EXPORT cmakeLib DESTINATION lib INCLUDES DESTINATION include)
-install(EXPORT cmakeLib DESTINATION share/cmake/cmakeLib FILE cmakeLibConfig.cmake)
+#install(EXPORT cmakeLib DESTINATION share/cmake/cmakeLib FILE cmakeLibConfig.cmake)
+install(EXPORT cmakeLib DESTINATION share/cmakeLib/cmake FILE cmakeLibConfig.cmake)
